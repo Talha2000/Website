@@ -1,9 +1,100 @@
+::-webkit-scrollbar {
+  display: none;
+}
 body {
-    background-color: white;
+    font-family: sans-serif;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100vw;
+    line-height: 1.6;
+    overflow: hidden;
 }
 
-.Top-Buttons {
-    background-color: black;
+/** Nav bar **/
+.nav {
+  overflow: hidden;
+  background-color: black;
+  font-size: 1.2em;
+  /* opacity: 0.8; */
+  text-decoration: none;
+}
+
+.nav ul{
+  flex: 1;
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav li {
+  margin-right: 20px;
+  justify-content: center;
+  background: none;
+  color: orange;
+  border: 2px solid;
+  border-radius: 5%;
+  padding: 1em 2em;
+  font-size: 12px;
+  transition: all 0.25s;
+}
+
+.nav li:hover {
+  border-color: rgb(228, 58, 6);
+  color: white;
+  box-shadow: 0 0.5em 0.5em -0.4em rgb(243, 93, 43);
+  transform: translateY(-0.25em);
+  cursor: pointer;
+}
+
+/**************/
+
+
+.container {
+  width: 100%;
+  height: 100%;
+  /* CSS Smooth Scroll */
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 99.2%;
+  height: 80vh;
+ 
+  /* Scroll Snap */
+  scroll-snap-align: center;
+}
+
+#Home {
+  background-color: black;
+}
+
+#Resume {
+  border: 0.5px solid red;
+
+}
+
+#About {
+  background-color: blue;
 }
 
 
+/* @media (max-width: 760px) {
+  .nav ul{
+    flex-direction: column;
+  }
+} */
