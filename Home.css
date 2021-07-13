@@ -10,7 +10,9 @@
     line-height: 1.6;
     overflow: hidden;
 } */
-
+html {
+  scroll-behavior: smooth;
+}
 *{
   margin: 0;
   padding: 0;
@@ -164,23 +166,13 @@
 
 }
 
-/* about section */
 
-section.about{
-  padding: 200px 0;
-  background: url("Assets/White.jpg") no-repeat center center/cover;
-  background-color: rgb(189, 176, 168);
-  background-blend-mode:multiply;
-  background-attachment: fixed;
-
-
-}
-.about {
+/* all similar styled code */
+.about, .services, .skills {
   Font-Family: 'Poppins', sans-serif;
-  height: 100vh;
 }
 
-.about .title {
+section .title {
   position: relative;
   text-align: center;
   font-size: 60px;
@@ -190,18 +182,17 @@ section.about{
   font-family: 'Ubuntu', sans-serif;
 }
 
-
-.about .title::before{
+section .title::before{
   content: "";
   position: absolute;
   bottom: -10px;
   left: 50%;
   width: 180px;
-  height: 5px;
+  height: 3px;
   background: black;
   transform: translateX(-50%);
 }
-.about .title::after{
+section .title::after{
   position: absolute;
   bottom: -25px;
   left: 50%;
@@ -212,11 +203,29 @@ section.about{
   transform: translateX(-50%);
 }
 
-.about .about-content{
+.about .about-content, 
+.services .serv-content,
+.skills .skills-content{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+}
+
+/* about section */
+
+section.about{
+  padding: 100px 0;
+  background: url("Assets/White.jpg") no-repeat center center/cover;
+  background-color: rgb(189, 176, 168);
+  background-blend-mode:multiply;
+  background-attachment: fixed;
+
+
+}
+
+.about{
+  height: 100vh;
 }
 
 .about .about-content .left {
@@ -224,8 +233,8 @@ section.about{
 }
 
 .about .about-content .left img {
-  height: 600px;
-  width: 600px;
+  height: 400px;
+  width: 400px;
   object-fit: cover;
   border-radius: 6px;
 }
@@ -276,6 +285,88 @@ section.about{
   opacity: 0.7;
 
 }
+
+/* Projects section */
+.services {
+  padding: 100px;
+  color: white;
+  background: black;
+}
+
+.services .title {
+  color: orange;
+  background: black;
+}
+
+.services .title:before{
+  background: white;
+}
+
+.services .title:after{
+  content: "";
+  background: black;
+}
+
+.services .serv-content .card{
+  width: calc(33% - 20px);
+  background: #222;
+  text-align: center;
+  border-radius: 5px;
+  padding: 20px 25px;
+  margin-bottom: 5%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.services .serv-content .card .box{
+  transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover{
+  background: orange;
+  opacity: 0.9;
+}
+
+.services .serv-content .card:hover .box{
+  transform: scale(1.05);
+}
+
+.services .serv-content .card i{
+  font-size: 50px;
+  color: orange;
+  transition: color 0.3s ease;
+}
+.services .serv-content .card:hover i{
+  color: white;
+}
+
+.services .serv-content .card text{
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+/* skills section */
+
+.skills {
+  padding: 100px;
+
+}
+
+.skills .skills-content .column{
+  width: calc(50% - 30px);
+}
+
+.skills .skills-content .text{
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.skills .skills-content .left .text .ul{
+  list-style: circle;
+}
+
+
 /* responsive media query start */
 @media (max-width: 2000px){
   .Home .max-width {
@@ -285,8 +376,8 @@ section.about{
 
 @media (max-width: 1500px){
   .about .about-content .left img {
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
   }
 }
 
@@ -315,6 +406,7 @@ section.about{
   }
   .navbar .menu li{
     display: block;
+   border-color: black;
   }
   .navbar .menu li a{
     display: inline-block;
@@ -334,7 +426,7 @@ section.about{
     max-width: 800;
   }
   .about .about-content .column{
-      width: 50%;
+      width: 100%;
   }
 
   .about .about-content .left{
@@ -342,11 +434,23 @@ section.about{
     justify-content: center;
     margin: 0 auto 60px;
   }
+
+  .about .about-content .right{
+    flex: 100%;
+  }
+  .services .serv-content .card{
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 991px){
   .max-width {
     padding: 0 50px;
+  }
+
+  .services .serv-content .card{
+    width: 100%;
   }
 }
 
