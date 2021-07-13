@@ -19,7 +19,7 @@
 }
 
 .max-width {
-  max-width: 2000px;
+  max-width: 1300px;
   padding: 0 80px;
   margin: auto;
 }
@@ -166,51 +166,9 @@
 
 
 /* responsive media query start */
-@media (max-width: 1800px){
+@media (max-width: 1104px){
   .Home .max-width {
     margin-left: 0px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .menu-btn{
-    display: block;
-    z-index: 999;
-  }
-
-  .navbar i.active:before{
-    content: "\f00d";
-  }
-  .navbar .menu {
-    position: fixed;
-    height: 100vh;
-    width: 100%;
-    left: -100%;
-    top: 0;
-    background: black;
-    text-align: center;
-    padding-top: 80px;
-    transition: all 0.3s ease;
-  }
-  .navbar .menu.active{
-    left: 0;
-  }
-  .navbar .menu li{
-    display: block;
-  }
-  .navbar .menu li a{
-    display: inline-block;
-    margin: 20px 0;
-    font-size: 25px;
-  }
-  .Home .home-content .text1 {
-    font-size: 40px;
-  }
-  .Home .home-content .text2{
-      font-size: 70px;
-  }
-  .Home .home-content .text3{
-      font-size: 35px;
   }
 }
 
@@ -220,169 +178,57 @@
   }
 }
 
-@media (max-width: 690px){
-  .max-width {
-    padding: 0 23px;
+@media (max-width: 947px) {
+  .menu-btn{
+    display: block;
+    z-index: 999;
   }
 
-  .Home .home-content .text2{
-    font-size: 60px;
+  .navbar i.active:before{
+    content: "\f00d";
   }
-  .Home .home-content .text3{
-    font-size: 32px;
+  .navbar .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: black;
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.3s ease;
   }
-}
-
-
-/* @media (min-width: 1600px){
-  .Home .max-width {
-    margin-left: 0;
+  .navbar .menu.active{
+    left: 0;
   }
-
-  .Home .home-content .text1 {
-    font-size: 30px;
+  .navbar .menu li{
+    display: block;
   }
-  .Home .home-content .text2{
-      font-size: 100px;
-      font-weight: 600;
-      margin-left: -3px;
+  .navbar .menu li a{
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
   }
-  .Home .home-content .text3{
-      font-size: 45px;
-      margin: 5px 0;
-  }
-}
-
-@media (min-width: 1500px){
-
-  .Home .max-width {
-    margin-left: 0;
-  }
-  .Home .home-content .text1 {
-    font-size: 30px;
-  }
-  .Home .home-content .text2{
-      font-size: 100px;
-      font-weight: 600;
-      margin-left: -3px;
-  }
-  .Home .home-content .text3{
-      font-size: 45px;
-      margin: 5px 0;
-  }
-}
-
-@media (max-width: 1200px){
   .Home .home-content .text1 {
     font-size: 40px;
   }
   .Home .home-content .text2{
       font-size: 80px;
-      font-weight: 600;
-      margin-left: -3px;
   }
   .Home .home-content .text3{
-      font-size: 50px;
-      margin: 5px 0;
-  }
-  .menu-btn{
-    display: block;
-    z-index: 999;
-  }
-
-  .navbar i.active:before{
-    content: "\f00d";
-  }
-  .navbar .menu {
-    position: fixed;
-    height: 100vh;
-    width: 100%;
-    left: -100%;
-    top: 0;
-    background: black;
-    text-align: center;
-    padding-top: 80px;
-    transition: all 0.3s ease;
-  }
-  .navbar .menu.active{
-    left: 0;
-  }
-  .navbar .menu li{
-    display: block;
-  }
-  .navbar .menu li a{
-    display: inline-block;
-    margin: 20px 0;
-    font-size: 25px;
+      font-size: 35px;
   }
 }
 
-@media (max-width: 1104px){
-  .Home .max-width {
-    margin-left: 0 50px;
+@media (max-width: 500px){
+  .Home .home-content .text2{
+    font-size: 50px;
+  }
+  .Home .home-content .text3{
+    font-size: 27px;
   }
 }
 
-@media (max-width: 800px){
-  /* .max-width {
-    padding: 0 50px;
-  } */
-
-  /* fixes the responsiveness for menu at 800px*/
-  /* .Home .home-content .text1 {
-    font-size: 20px;
-  }
-    .Home .home-content .text2{
-      font-size: 50px;
-      font-weight: 600;
-      margin-left: -3px;
-  }
-    .Home .home-content .text3{
-      font-size: 30px;
-      margin: 5px 0;
-  }
-  .navbar ul{
-  background-color: var(--shadow);
-  display: grid;
-  grid-gap: 50px;
-  padding: 0;
-  border-color: black;
-  }
-
-  .navbar .menu li {
-    border-color: black;
-  }
-  .menu-btn{
-    display: block;
-    z-index: 999;
-  }
-
-  .navbar i.active:before{
-    content: "\f00d";
-  }
-  .navbar .menu {
-    position: fixed;
-    height: 100vh;
-    width: 100%;
-    left: -100%;
-    top: 0;
-    background: black;
-    text-align: center;
-    padding-top: 80px;
-    transition: all 0.3s ease;
-  }
-  .navbar .menu.active{
-    left: 0;
-  }
-  .navbar .menu li{
-    display: block;
-  }
-  .navbar .menu li a{
-    display: inline-block;
-    margin: 20px 0;
-    font-size: 25px;
-  }
-} */
 
 
 /* about section */
