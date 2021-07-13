@@ -167,13 +167,26 @@
 
 /* responsive media query start */
 
-/* @media (max-width: 1550px){
+@media (min-width: 1600px){
   .Home .max-width {
     margin-left: 0;
   }
-} */
 
-/* @media (max-width: 1500px){
+  .Home .home-content .text1 {
+    font-size: 30px;
+  }
+  .Home .home-content .text2{
+      font-size: 100px;
+      font-weight: 600;
+      margin-left: -3px;
+  }
+  .Home .home-content .text3{
+      font-size: 45px;
+      margin: 5px 0;
+  }
+}
+
+@media (min-width: 1500px){
 
   .Home .max-width {
     margin-left: 0;
@@ -182,7 +195,7 @@
     font-size: 30px;
   }
   .Home .home-content .text2{
-      font-size: 90px;
+      font-size: 100px;
       font-weight: 600;
       margin-left: -3px;
   }
@@ -190,7 +203,7 @@
       font-size: 45px;
       margin: 5px 0;
   }
-} */
+}
 
 @media (max-width: 1200px){
   .Home .home-content .text1 {
