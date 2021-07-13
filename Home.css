@@ -225,7 +225,7 @@ section.about{
 }
 
 .about{
-  height: 100vh;
+  height: auto;
 }
 
 .about .about-content .left {
