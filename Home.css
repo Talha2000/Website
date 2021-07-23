@@ -37,7 +37,7 @@ html {
 }
 .navbar.sticky {
   padding: 15px 0;
-  background: rgb(0, 0, 0, 0.5);
+  background: rgb(0, 0, 0);
 }
 .navbar .max-width {
   display: flex;
@@ -215,7 +215,7 @@ section .title::after{
 /* about section */
 
 section.about{
-  padding: 100px 0;
+  padding: 200px 0;
   background: url("Assets/White.jpg") no-repeat center center/cover;
   background-color: rgb(189, 176, 168);
   background-blend-mode:multiply;
@@ -224,6 +224,10 @@ section.about{
 
 }
 
+.about .title {
+  top: -15px;
+
+}
 .about{
   height: auto;
 }
@@ -288,7 +292,7 @@ section.about{
 
 /* Projects section */
 .services {
-  padding: 100px;
+  padding: 200px;
   color: white;
   background: black;
 }
@@ -340,17 +344,10 @@ section.about{
   color: white;
 }
 
-.services .serv-content .card text{
-  font-size: 25px;
-  font-weight: 500;
-  margin: 10px 0 7px 0;
-}
-
 /* skills section */
 
 .skills {
-  padding: 100px;
-
+  padding: 250px;
 }
 
 .skills .skills-content .column{
@@ -362,10 +359,29 @@ section.about{
   font-weight: 600;
 }
 
+.skills .skills-content .skillText{
+  padding-top: 15px;
+
+}
+
 .skills .skills-content .left .text .ul{
   list-style: circle;
 }
 
+/* Contact form */
+
+.contactB {
+  height: 100vh;
+  text-align: center;
+  background-color: gray;
+}
+
+.contact-form{
+  display: inline-block;
+  border: solid 5px black;
+  margin-top: 20%;
+  padding: 10px;
+}
 
 /* responsive media query start */
 @media (max-width: 2000px){
@@ -454,7 +470,6 @@ section.about{
   }
 }
 
-
 @media (max-width: 500px){
   .Home .home-content .text2{
     font-size: 50px;
@@ -464,26 +479,24 @@ section.about{
   }
 }
 
+@media (max-width: 380px){
+  .max-width {
+    padding: 0 50px;
+  }
 
+  .about .about-content .left img {
+    height: 200px;
+    width: 200px;
+  }
+}
 
+/* @media (max-width: 316px){
+  .max-width {
+    width: auto;
+  }
 
-/* section {
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  height: 105vh;
-  scroll-snap-align: center;
-} */
-
-/* section#Resume {
-  height: 100vh;
-  background-color: white;
-} */
-
-
-/* section#About {
+  .about .about-content .left img {
+    height: 200px;
+    width: 200px;
+  }
 } */
